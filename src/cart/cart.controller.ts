@@ -1,3 +1,4 @@
+
 import {
   Controller,
   Get,
@@ -9,6 +10,10 @@ import {
   HttpStatus,
 } from '@nestjs/common';
 import * as Joi from 'joi';
+import { Controller, Get, Delete, Put, Body, Req, Post, UseGuards, HttpStatus } from '@nestjs/common';
+
+// import { BasicAuthGuard, JwtAuthGuard } from '../auth';
+
 import { OrderService } from '../order';
 import { AppRequest, getUserIdFromRequest } from '../shared';
 import { calculateCartTotal } from './models-rules';

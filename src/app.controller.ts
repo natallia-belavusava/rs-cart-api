@@ -17,7 +17,9 @@ import {
 export class AppController {
   constructor(private authService: AuthService) {}
 
+
   @Get(['', 'ping'])
+
   healthCheck(): any {
     return {
       statusCode: HttpStatus.OK,
